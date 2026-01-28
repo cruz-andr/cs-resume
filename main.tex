@@ -1,1 +1,183 @@
-cs
+%-------------------------
+% Resume - Tailored for Google SWE Intern (Summer 2026)
+% Author: Andres Cruz (edited)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Andres Cruz} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1-786-262-0053 ~ \href{mailto:acruz24100@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{acruz24100@gmail.com}} ~ 
+    \href{https://andrescruz.xyz/}{\raisebox{-0.2\height}\faExternalLinkAlt\ \underline{andrescruz.xyz}} ~     \href{https://github.com/cruz-andr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/cruz-andr}} \\
+    \vspace{2pt}
+    \small Boston, MA \; $\mid$ \; Available Summer 2026 (12 weeks, full-time)
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Bachelor of Science in Computer Science and Mechanical Engineering, \textbf{GPA: 3.84/4.0}}{Sep 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Algorithms \& Data Structures, Program Design \& Implementation 2 (Object-Oriented Design), Fundamentals of CS I/II, Discrete Structures, Programming in C++}
+        \resumeItem{\textbf{Honors:} Dean's List (Fall 2024, Spring 2025)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Christopher Columbus High School}{Miami, FL}
+      {High School Diploma}{Aug 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {App Development Intern}{Jun 2023 -- Aug 2023}
+      {Florida International University}{Miami, FL}
+      \resumeItemListStart
+        \resumeItem{Built two full-stack web applications using React.js (frontend), Node.js (Express) and MySQL; designed RESTful APIs and database schemas to support multi-user flows}
+        \resumeItem{Implemented authentication, client-server integration, and performance optimizations to improve UX and reduce API latency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Technology Consultant}{Aug 2020 -- Present}
+      {Cruz Computer Consultations}{Remote / Clients in FL}
+      \resumeItemListStart
+        \resumeItem{Advised 50+ clients on technology purchases and built 20+ custom PCs with 98\% client satisfaction}
+        \resumeItem{Designed secure cloud backup and smart-home integration solutions; automated deployment scripts to reduce setup time by 40\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Intern \& Cyber Club Lead}{Jun 2022 -- May 2024}
+      {Christopher Columbus High School}{Miami, FL}
+      \resumeItemListStart
+        \resumeItem{Deployed and managed 800+ student devices; performed penetration testing to improve device security by estimated 30\%}
+        \resumeItem{Led Cyber Club to top-3 placement in a national cybersecurity competition; mentored 5 junior members on scripting and network fundamentals}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS / OPEN SOURCE-----------
+\section{Selected Projects \& Open Source}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Robotics \& IoT Systems}}{2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Designed biped walking robots: implemented servo-control algorithms and IMU-based stabilization (control loops, sensor fusion concepts).}
+            \resumeItem{Built facial-recognition door lock using Python, OpenCV, Raspberry Pi.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Data Analytics Dashboard}}{2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed Python data-processing pipelines (pandas, scikit-learn) for inventory optimization and predictive analytics; surfaced results via Power BI dashboards and SQL queries.}
+            \resumeItem{Automated Excel reporting using VBA and Power Query, saving repeated analysis time for clients.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Open-source contribution — Prime Intellect (PR submitted)}}{2025}
+          \resumeItemListStart
+            \resumeItem{Ported research evaluation benchmarks into a standardized OpenBench format (PR description: implement configurable N-shot and base-model evaluation modes), improving reproducibility and enabling streamlined benchmarking of LLM checkpoints.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Java, Python, JavaScript, SQL, Embedded C/C++ (Arduino/ESP32) \\
+     \textbf{Frameworks / Tools:} React.js, Node.js (Express), RESTful APIs, MySQL, Git, AWS IoT Core, MQTT \\
+     \textbf{Systems:} Unix/Linux environments, Raspberry Pi, Arduino, ESP32, Cloud deployment basics \\
+     \textbf{Other:} Data structures \& algorithms, basic machine learning (scikit-learn), Power BI, Figma
+    }}
+ \end{itemize}
+
+%-----------INTERESTS-----------
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Large Language Models \& Evaluation • Systems & Embedded Development • Racket Sports • Product Design
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
